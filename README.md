@@ -6,7 +6,7 @@ An ActiveRecord ODBC adapter. Master branch is working off of Rails 5.0.1.
 
 This adapter will work for SAP HANA and it may be able to do basic querying for other DBMSes
 
-This adapter is a merge of [Localytics ODBC Adapter] (https://github.com/localytics/odbc_adapter) and [SAPs ActiveRecord-HANA-Adapter](https://github.com/SAP/activerecord-hana-adapter)
+This adapter is a merge of [Localytics ODBC Adapter](https://github.com/localytics/odbc_adapter) and [SAPs ActiveRecord-HANA-Adapter](https://github.com/SAP/activerecord-hana-adapter)
 
 ## Installation
 
