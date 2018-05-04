@@ -202,7 +202,7 @@ module ODBCAdapter
     end
 
     def rename_column(table_name, column_name, new_column_name)
-      execute("RENAME COLUMN #{table_name}.#{quote_column_name(column_name)} to #{quote_column_name(new_column_name)}")
+      execute("RENAME COLUMN #{quote_table_name(table_name)}.#{quote_column_name(column_name)} to #{quote_column_name(new_column_name)}")
     end
 
     def remove_column(table_name, *column_names)
