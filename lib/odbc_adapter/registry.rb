@@ -3,8 +3,7 @@ module ODBCAdapter
     attr_reader :dbs
 
     def initialize
-      @dbs = {
-      }
+      @dbs = {}
     end
 
     def adapter_for(reported_name)
@@ -14,7 +13,7 @@ module ODBCAdapter
           adapter if reported_name =~ pattern
         end
 
-      normalize_adapter(found && found.last || :Hana)
+      normalize_adapter(found && found.last || :Null)
     end
 
     def register(pattern, superclass = Object, &block)
